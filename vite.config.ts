@@ -9,15 +9,15 @@ import vue from "@vitejs/plugin-vue";
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
-import vuetify from "vite-plugin-vuetify";
+// import vuetify from "vite-plugin-vuetify";
 import { resolve } from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
-    vuetify({
-      autoImport: true,
-    }),
+    // vuetify({
+    //   autoImport: true,
+    // }),
     AutoImport({
       imports: ["vue", "vue-router", "pinia"],
     }),
